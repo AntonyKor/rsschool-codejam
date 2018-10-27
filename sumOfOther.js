@@ -1,4 +1,6 @@
 function sumOfOther(array) {
-  let sum = array.reduce((acc, item) => acc + item);
+  const sum = array.reduce((acc, item) => acc + item);
   return array.map(item => sum - item);
 }
+
+console.log(sumOfOther([2, 3, 4, 1]))
